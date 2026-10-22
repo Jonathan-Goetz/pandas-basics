@@ -48,5 +48,5 @@ movies['category'] = movies['category'].fillna('Animation')
 # sort by movie_id and drop runtime_hours
 movies = movies.sort_values(by=['movie_id'], ignore_index = True).drop(columns = 'runtime_hours')
 
-movies.to_csv("disney_clean.csv", index=False)
+movies.to_csv("disney_tidy.csv", index=False)
 print(movies)
