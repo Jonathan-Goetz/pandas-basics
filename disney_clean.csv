@@ -1,0 +1,13 @@
+movie_id,title,rated,release_date,runtime_minutes,market,revenue,category
+D01,The Lion King,G,06/15/1994,90.0,USA,100,Animation
+D01,The Lion King,G,06/15/1994,90.0,Europe,150,Animation
+D02,The Jungle Book,PG,12/25/1994,105.0,USA,40,Animation
+D02,The Jungle Book,PG,12/25/1994,105.0,Europe,30,Animation
+D03,Toy Story,G,11/22/1995,90.0,USA,90,Animation
+D03,Toy Story,G,11/22/1995,90.0,Europe,80,Animation
+D04,Pocahontas,G,06/23/1995,90.0,USA,50,Animation
+D04,Pocahontas,G,06/23/1995,90.0,Europe,60,Animation
+D05,Frozen,PG,11/27/2013,105.0,USA,120,Animation
+D05,Frozen,PG,11/27/2013,105.0,Europe,180,Animation
+D06,Monsters University,G,06/21/2013,105.0,USA,80,Animation
+D06,Monsters University,G,06/21/2013,105.0,Europe,70,Animation
