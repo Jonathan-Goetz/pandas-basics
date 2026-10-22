@@ -26,7 +26,7 @@ movies_94_melted = add_market(movies_1994, 1994)
 movies_95_melted = add_market(movies_1995, 1995)
 
 
-# join dataframes
+# join dataframes (assuming currency in movies_2013 is USD for all)
 movies_allyears = pd.concat([movies_94_melted, movies_95_melted, movies_2013], ignore_index=True)
 
 # replace rated strings
@@ -39,7 +39,7 @@ movies = pd.merge(movies_allyears, movies_lookup, how = 'left', on = 'movie_id')
 # caslculate missing runtime minutes
 movies['runtime_minutes'] = movies['runtime_minutes'].fillna(movies['runtime_hours'] * 60)
 
-# toy story runtime minutes corrected
+# toy story runtime minutes corrected (in the original data, it had 180 minutes instead of ca. 80)
 movies.loc[movies['movie_id'] == 'D03', 'runtime_minutes'] = movies.loc[movies['movie_id'] == 'D03', 'runtime_hours'] * 60
 
 # add category for those missing (ofc. this is lazy, but these are all animated movies)
